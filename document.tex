@@ -9,6 +9,9 @@
 }
 \usepackage{graphicx}
 \usepackage{titling}
+\usepackage{booktabs} % Per linee più belle nelle tabelle
+\usepackage{caption}  % Per personalizzare le didascalie
+\usepackage{circuitikz}
 
 \title{PRIMA ESPERIENZA DI LABORATORIO.
 }
@@ -47,8 +50,9 @@
 	\section{Strumentazione} \label{sec:Strumentazione}
 	 	\begin{itemize} 
 	 		\item Breadboard
-	 		\item Alimentatore da banco (alimentatore duale flottante +/-30V, 2A; alimentatore singolo flottante + 8V, 5A)
+	 		\item Alimentatore da banco (alimentatore duale flottante max/min: +/-30V, 2A; alimentatore singolo flottante max: + 8V, 5A)
 	 		\item Multimetro DMM (sensibilità corrente: 200 $\mu$A - 10 A; sensibilità tensione: 200 mV - 1000 V)
+	 	
 	 	\end{itemize}
 	
 	\section{Misure di tensione} \label{sec:Tensione}
@@ -57,8 +61,64 @@
 	
 	
 	\section{Legge di Ohm} \label{sec:Ohm}
-	\subsection{Dati sperimentali}
-	\subsection{Relazione fra I e V}
-	\subsection{Stima del valore di R}
+		\subsection{Dati sperimentali}
+			\paragraph{}
+				Utilizzando il multimetro$^{\ref{sec:Strumentazione}}$ si sono misurate le intensità di corrente (I) al variare arbitrario del voltaggio (V), con una resistenza equivalente di $500\Omega$ ottenuta mettendo in parallelo 2 resistori da $R=1k\Omega$.
+				\begin{center}
+					\begin{equation}
+						R_{eq} = \frac{R}{2} = 500\Omega
+					\end{equation}
+				\end{center}
+				
+				\begin{center}
+					\begin{circuitikz}
+						\tikzstyle{every node}=[font=\normalsize]
+						
+						% Generatore di voltaggio
+						\draw (2,10) to[battery, l={\normalsize $V_s$}] (2,7.75);
+						
+						% Linee orizzontali
+						\draw (2,10) to[short] (5.25,10);
+						\draw (3.5,7.75) to[short] (5.25,7.75);
+						
+						% Resistenze
+						\draw (5.25,10) to[R, l={\normalsize R}] (5.25,7.75);
+						\draw (3.5,10) to[R, l={\normalsize R}] (3.5,7.75);
+						
+						% Metrica
+						\draw (2,7.75) to[rmeter, t=A] (3.5,7.75);
+						
+						% Nodini
+						\node at (3.5,7.75) [circ] {};
+						\node at (3.5,10) [circ] {};
+					\end{circuitikz}
+				\end{center}
+				
+				
+				
+				\begin{table}[h]
+					\centering
+					\captionsetup{skip=10pt} % Imposta lo spazio tra la tabella e la caption
+					\caption{MISURE DI LABORATORIO}
+					\label{tab:misure_sperimentali}
+					\begin{tabular}{c|c}
+						V (Volt) & I (mA) \\ \hline
+						1 & 1.948  \\ \hline
+						2 & 3.998  \\ \hline
+						3 & 5.846  \\ \hline
+						4 & 7.796  \\ \hline
+						5 & 9.747  \\ \hline
+						6 & 11.699 \\ \hline
+						7 & 13.956 \\ \hline
+						8 & 15.955
+					\end{tabular}
+				\end{table}
+		
+		
+		\subsection{Relazione fra V ed I}
+		\subsection{Stima del valore di R}
+				
+				
+	
 	
 \end{document}
