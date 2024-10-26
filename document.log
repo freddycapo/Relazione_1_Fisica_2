@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.26)  26 OCT 2024 22:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.26)  27 OCT 2024 00:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,7 +752,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [1{C:/Users/feder/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
+] [2]
 (document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -760,25 +760,28 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 32616 strings out of 474486
- 846185 string characters out of 5743754
- 1941542 words of memory out of 5000000
- 54598 multiletter control sequences out of 15000+600000
+ 32618 strings out of 474486
+ 846208 string characters out of 5743754
+ 1943542 words of memory out of 5000000
+ 54600 multiletter control sequences out of 15000+600000
  562962 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,107p,413b,826s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi525\
-cmbrmi8.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbrigh
-t/dpi525\cmbr8.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/
-cmbright/dpi720\cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/public/cmbright/dpi600\cmbrmi10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/public/cmbright/dpi600\tbmr10.pk> <C:\Users\feder\AppData\Local\Mi
-KTeX\fonts/pk/ljfour/public/cmbright/dpi864\cmbrbx10.pk> <C:\Users\feder\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr17.pk> <C:\Users\fede
-r\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr10.pk>
-Output written on document.pdf (1 page, 49311 bytes).
+ 99i,12n,107p,413b,826s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\
+cmbrsy10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbrig
+ht/dpi600\cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
+lic/cmbright/dpi525\cmbrmi8.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/l
+jfour/public/cmbright/dpi525\cmbr8.pk> <C:\Users\feder\AppData\Local\MiKTeX\fon
+ts/pk/ljfour/public/cmbright/dpi720\cmbrbx10.pk> <C:\Users\feder\AppData\Local\
+MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbrmi10.pk> <C:\Users\feder\AppD
+ata\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\tbmr10.pk> <C:\Users\fe
+der\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi864\cmbrbx10.pk> <C
+:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr1
+7.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi6
+00\cmbr10.pk>
+Output written on document.pdf (2 pages, 56926 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
+ 201 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
