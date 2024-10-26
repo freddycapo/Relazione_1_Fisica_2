@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.26)  26 OCT 2024 11:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.10.26)  26 OCT 2024 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -186,20 +186,20 @@ File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
 (document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -261,26 +261,32 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 47.
+LaTeX Font Info:    Trying to load font information for TS1+cmbr on input line 
+49.
+
+(C:\Users\feder\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\ts1cmbr.fd
+File: ts1cmbr.fd 2005/04/13 v8.1 (WaS)
+)
 LaTeX Font Info:    Trying to load font information for OML+cmbrm on input line
- 46.
+ 51.
 
 (C:\Users\feder\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\omlcmbrm.fd
 File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Trying to load font information for OMS+cmbrs on input line
- 46.
+ 51.
 
 (C:\Users\feder\AppData\Local\Programs\MiKTeX\tex/latex/cmbright\omscmbrs.fd
 File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 46.
+(Font)              <7> on input line 51.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 46.
-LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 54.
+(Font)              <5> on input line 51.
 LaTeX Font Info:    Font shape `OT1/cmbr/b/n' in size <12> not available
-(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 55.
+(Font)              Font shape `OT1/cmbr/bx/n' tried instead on input line 60.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -290,9 +296,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.49998pt}.
 
-[1
+[1{C:/Users/feder/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-{C:/Users/feder/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+]
 (document.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -300,22 +306,23 @@ L3 programming layer <2024-01-04>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 2665 strings out of 474486
- 47697 string characters out of 5743754
- 1926542 words of memory out of 5000000
- 24942 multiletter control sequences out of 15000+600000
- 562322 words of font info for 50 fonts, out of 8000000 for 9000
+ 2695 strings out of 474486
+ 48449 string characters out of 5743754
+ 1928542 words of memory out of 5000000
+ 24968 multiletter control sequences out of 15000+600000
+ 562667 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,11n,93p,235b,295s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\
-cmbrmi10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbrig
-ht/dpi720\cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
-lic/cmbright/dpi864\cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/
-ljfour/public/cmbright/dpi600\cmbr10.pk> <C:\Users\feder\AppData\Local\MiKTeX\f
-onts/pk/ljfour/public/cmbright/dpi600\cmbr17.pk>
-Output written on document.pdf (1 page, 19331 bytes).
+ 79i,11n,93p,235b,291s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbright/dpi720\
+cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/public/cmbrig
+ht/dpi600\cmbrmi10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/ljfour/pub
+lic/cmbright/dpi600\tbmr10.pk> <C:\Users\feder\AppData\Local\MiKTeX\fonts/pk/lj
+four/public/cmbright/dpi864\cmbrbx10.pk> <C:\Users\feder\AppData\Local\MiKTeX\f
+onts/pk/ljfour/public/cmbright/dpi600\cmbr17.pk> <C:\Users\feder\AppData\Local\
+MiKTeX\fonts/pk/ljfour/public/cmbright/dpi600\cmbr10.pk>
+Output written on document.pdf (1 page, 38987 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
+ 136 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
