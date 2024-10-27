@@ -56,8 +56,128 @@
 	 	\end{itemize}
 	
 	\section{Misure di tensione} \label{sec:Tensione}
-	\section{Misure di Corrente} \label{sec:Corrente}
+		\subsection{Dati sperimentali}
+			Utilizzando il multimetro, sono state effettuate varie misurazioni 
+			della differenza di potenziale ai capi del resistore $R_2$
+			nel circuito rappresentato nella figura sottostante,
+			variando di volta in volta le due resistenze $R_1$ e $R_2$. 
+
+			\begin{figure}[h]
+				\caption{Circuito con $V_S = 6V$; $R_1$ e $R_2$ variabli}
+				\centering
+				\includegraphics[width=8cm, height=5cm]{Es 1 circuito.png}
+			\end{figure}
+
+			\begin{table}[h]
+				\centering
+				\captionsetup{skip=10pt} % Imposta lo spazio tra la tabella e la caption
+				\caption{Misure di Potenziale effettuate in laboratorio}
+				\begin{tabular}{c|c}
+					Coppia ($R_1$; $R_2$)	& $V_{R_1}$ (V) \\ \hline
+					(1k$\Omega$; 1k$\Omega$)	& 2.99 V \\ \hline
+					(1k$\Omega$; 0.5k$\Omega$) & 2.00 V \\ \hline
+					(10k$\Omega$; 10k$\Omega$) & 3.00 V \\ \hline
+					(100k$\Omega$; 100k$\Omega$) & 2.99 V \\ \hline
+					(1M$\Omega$; 1M$\Omega$) & 2.82 V \\ \hline
+					(10M$\Omega$; 10M$\Omega$) & 1.96 V \\
+				\end{tabular}
+			\end{table}
+
+
+		\subsection{Valori teorici con multimetro ideale}
+			In prima approssimazione, assumendo che il multimetro sia ideale e che 
+			abbia quindi resistenza infinita, il circuito ha il comportamento di un partitore di tensione. 
+			Pertanto $V_{R_2}$ 
+			(il valore teorico della differenza di potenziale ai capi di $R_2$) 
+			é descritto dalla formula:
+
+			\[
+				V_{R_2} = V_S \cdot \frac{R_2}{R_1 + R_2}
+			\]
+
+			\begin{figure}[h]
+				\caption{Valori teorici (multimetro ideale) e sperimentali di $V_{R2}$ in funzione di $(R_1; R_2)$.}
+				\centering
+				\includegraphics[width=8cm, height=5cm]{Es 1 no R_M.png}
+			\end{figure}
+			
+			Si noti che per valori di $R_1$ e $R_2$ dell'ordine di $1M\Omega$ e $10M\Omega$ 
+			(simili al valore della reale resistenza del multimetro, $R_M = 10M\Omega$)
+			il valore teorico calcolato si discosta apprezzabilmente da quello sperimentale. 
+			
+		\subsection{Valori teorici con multimetro reale}
+			Per migliorare la approssimazione, 
+			applichiamo le leggi di Kirchoff al circuito considerando ora l'effetto di $R_M$. 
+			Si ricava la seguente espressione per $V_{R_2}$:
+
+			\[
+				V_{R_2} = V_S\cdot\frac{R_2R_M}{R_1R_2 + R_1R_M + R_2R_M}
+			\]
+
+			\begin{figure}[h]
+				\caption{Valori teorici (multimetro reale) e sperimentali di $V_{R2}$ in funzione di $(R_1; R_2)$.}
+				\centering
+				\includegraphics[width=8cm, height=5cm]{Es 1 con R_M.png}
+			\end{figure}
+
+
+			Si noti come ora i valori teorici approssimino più fedelmente quelli sperimentali, 
+			in particolare per i valori più alti di $R_1$ e $R_2$.
+
+
+		
+
+		
 	
+	\section{Teorema di Millman - Misura di Corrente} \label{sec:Corrente}
+		\subsection{Misure sperimentali}			
+			\begin{figure}[h]
+				\caption{Circuito con $R_1=R_2=R_3=1k\Omega$ e $R_4=10k\Omega$}
+				\centering
+				\includegraphics[width=8cm, height=5cm]{Es 2 circuito.png}
+			\end{figure}
+
+			Utilizzando il multimetro abbiamo misurato le correnti di lato dei 3 resistori $R_1$, $R_2$ e $R_3$, 
+			e la differenza di potenziale $V_{R_4}$ ai capi del resistore $R_4$. Chiameremo le correnti 
+			che passando per i 4 resistori scorrendo dal basso verso l'alto rispettivamente $I_1$, $I_2$, $I_3$, $I_4$.
+			Riportiamo qui sotto le misure:
+
+			\[
+				I_1= 12.57 \ mA,\
+				I_2= 11.85 \ mA, \
+				I_3= -6.2 \ mA, \
+				V_{R_4}=3.11 \ V
+			\]	
+
+			
+		\subsection{Calcolo $V_0$ applicando Millman}
+			Fissando a 0V il potenziale di terra, applichiamo ora il teorema di Millman al nodo $V_0$, con $R_1=R_2=R_3=1k\Omega$,
+			$R_4=10k\Omega$, $V_1=8V$, $V_2=5V$, $V_3=-3V$, $V_4=V_{terra}=0V$. Si ha pertanto:
+			\\	
+			\[
+				V_0 = \frac{\sum_{i=1}^{4} V_i/R_i}{\sum_{i=1}^{4} 1/R_i} = 3.26V
+			\]
+			\\
+			Ora il valore teorico per la differenza di potenziale ai capi di $R_4$ è una discreta approssimazione per quello sperimentale:
+
+			\[
+				V_{R_4} = V_0 - V_4 = 3.26V - 0V = 3.26V \approx 3.11V
+			\]
+		
+		\subsection{Calcolo di $I_1$, $I_2$ e $I_3$}
+			Applicando ora la legge di Ohm nella forma $I=\frac{V}{R}$ troviamo i seguenti valori teorici per le $I_1$, $I_2$ e $I_3$, che danno una 
+			buona approssimazione dei valori sperimentali:
+			\[
+				I_1=\frac{V_0 - V_1}{R_1}=4,74mA \approx 12.57mA
+			\]
+			\[
+				I_2=\frac{V_0 - V_2}{R_1}=1,74mA \approx 11.85mA
+			\]
+			\[
+				I_3=\frac{V_0 - V_3}{R_1}=-6,26mA \approx -6.24mA
+			\]
+
+
 	
 	
 	\section{Legge di Ohm} \label{sec:Ohm}
