@@ -66,7 +66,7 @@
 				Utilizzando il multimetro$^{\ref{sec:Strumentazione}}$ si sono misurate le intensità di corrente (I) al variare arbitrario del voltaggio (V), con una resistenza equivalente di $500\Omega$ ottenuta mettendo in parallelo 2 resistori da $R=1k\Omega$.
 				\begin{center}
 					\begin{equation}\label{eq:Resistenza}
-						R_{eq} = \frac{R}{2} = 500\Omega
+						R_{eq} = \frac{R^2}{2R}  = \frac{R}{2} = 500\Omega
 					\end{equation}
 				\end{center}
 				
@@ -122,18 +122,51 @@
 			\end{equation}
 			In particolare:
 				\begin{equation}
-				\frac{V}{I} = R
-			\end{equation}
+					\frac{V}{I} = R\label{eq:Legge di Ohm}
+				\end{equation}
 			Dunque fra V ed I c'è una relazione \textbf{lineare}. In cui \textbf{R} è una costante che dipende dalle proprietà fisiche del resistore.
 		
 		
 		\subsection{Stima del valore di R}
-		Ipotizzando di non conoscere a priori la $R_{eq}$, dai dati sperimentali, si nota già una relazione fra V ed I:
+		Ipotizzando di non conoscere a priori la $R_{eq}$, dai dati sperimentali e dalla legge di Ohm$^{\ref{eq:Legge di Ohm}}$, si cerca una relazione fra V ed I, del tipo $V/I$.
+		
+		
+			\begin{table}[h]
+				\centering
+				\captionsetup{skip=10pt} % Imposta lo spazio tra la tabella e la caption
+				\caption{CALCOLO R MISURATA}
+				\label{tab:calcolo_resistenze}
+				\begin{tabular}{r|r|r}
+					V (Volt) & I (mA) & $R_i$ ($\Omega$) \\ \hline
+					1        & 1.948  & 513.35          \\ \hline
+					2        & 3.998  & 500.25          \\ \hline
+					3        & 5.846  & 513.17          \\ \hline
+					4        & 7.796  & 513.08          \\ \hline
+					5        & 9.747  & 512.97          \\ \hline
+					6        & 11.699 & 512.86          \\ \hline
+					7        & 13.956 & 501.58          \\ \hline
+					8        & 15.955 & 501.41         
+				\end{tabular}
+			\end{table}
+		
+		Per stimare il valore misurato di R utilizziamo un tool di \textbf{fitting curve} (Vernier Studio), utilizzando un metodo di regressione lineare per calcolare i parametri $b$ e $m$ della retta che meglio approssima la relazione $V/I$.
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.75\textwidth]{Graficodiohm.png} % Sostituisci con il nome del tuo file
+			\caption{Fitting lineare}
+			\label{fig:Grafico}
+		\end{figure}
+		
 		\begin{equation}
-			\frac{V}{I} \simeq 500\Omega
+			\textbf{Best Fit} \quad\quad\quad\quad	y = 50.9 + 501.7x
 		\end{equation}
-				
-				
+		
+		Il parametro $m$ corrisponde alla misura della resistenza $R_{eq}$, effettivamente la misura coincide con il reale valore della $R_{eq}$.
+		
+		\begin{equation}
+			R_{eq} = 500\Omega \simeq 501.7 = R_{mis}
+		\end{equation}
 	
 	
 \end{document}
